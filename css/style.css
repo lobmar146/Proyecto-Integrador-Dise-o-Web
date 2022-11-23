@@ -1,0 +1,458 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #242D52;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: white; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:76px 0px;
+}
+
+h1{
+    font-size: 0;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 28px;
+}
+header ul a{
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header ul a:hover{
+    color: #afb0b4;
+}
+
+/* Este contenedor, achica algunos elementos (todos salvo las cards
+   Le doy 1110px dado a los padding que figuran en figma*/
+.contenedor-conMargen{  
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1110px;
+    padding: 0px 2rem;
+}
+
+.boton-naranja{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: #F3603B;
+    color:white;
+    box-shadow:0px 4px 7px rgba(156, 126, 126, 0.25);
+    transition: 0.3s;
+}
+
+.boton-naranja:hover{
+    background-color:#f98f75 ;
+    color: #fff4e2;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.row-h2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 8rem;
+    gap: 3.5rem;
+}
+
+.column {
+    flex: 1;
+    
+}
+.estilos-h{
+    font-weight: 700px;    
+    color: #232C50; 
+
+}
+h2{
+    font-size: 3.5rem;
+
+}
+
+.column p{
+    padding: 1.75rem 0;
+    padding-right: 35%;
+}
+
+/*Clase que permite la imagen sea flexible*/
+.imagen-flexible{
+    width: 100%;
+    /*Al tener el heigth en auto, al achicarse se achica a la par*/
+    height: auto;
+}
+h3{
+    font-size: 2.25rem;
+}
+
+.row-h3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 8rem;
+    gap: 3.5rem;
+}
+.row-h3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 8rem;
+    gap: 3.5rem;
+}
+
+.row-li-trucho{
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;  
+}
+.titulo-li-trucho{
+    display: flex;
+    align-items: center;
+}
+
+.elemento-numerico-li{
+    color: white;
+    padding: 10px 25px;
+    border-radius:50px;
+    background-color:#F3603B ;
+    font-weight: 700;
+}
+
+
+.p-li-trucho{
+    color:  #B3B2B7;
+    padding: 1rem 0rem 2rem 4.5rem !important;
+}
+
+h4{
+    padding-left:0.75rem ;
+}
+
+.testimonios{
+    text-align: center;
+}
+.testimonios h2{
+    font-size: 2.4rem;
+    padding-bottom: 4.68rem;
+
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2.1rem;
+    gap: 2rem;
+}
+.card{
+    position: relative;
+    max-width: 445px;
+    background-color: #FAFAFA;
+
+}
+.card h5{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 3.5rem;
+    padding-bottom: 1.3rem;
+    color: #3F4868;
+}
+.card p{
+    color: #B9B9C1;
+    padding: 2.4rem 1.3rem;
+
+}
+
+
+.imagen-card{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.simplify{
+    display: flex;
+    justify-content: center;
+    background-color: #F3613C;
+    width: 100%;
+    margin-top: 12rem;
+}
+.contenedor-simplify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.simplify h2{
+
+    padding:4rem 0;
+    color: white;
+    font-size: 40px;
+}
+
+.simplify .contenedor-conMargen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-blanco{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: white;
+    color:#F3603B;
+    box-shadow:0px 4px 7px rgba(156, 126, 126, 0.25);
+    transition: 0.3s;
+}
+
+.boton-blanco:hover{
+    color:#ffd1cd;
+}
+
+footer{
+    padding: 4rem 0rem;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.logos-footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.column-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+footer a:hover{
+    fill: #F3613C;
+    filter: invert(51%) sepia(79%) saturate(3647%) hue-rotate(340deg) brightness(105%) contrast(91%);   
+}
+
+footer label{
+    font-size: 0;
+}
+
+footer p{
+    color: white;
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    color: #8C8C94;
+}
+
+footer li{
+    padding-bottom: 0.75rem;
+}
+
+.logo-footer{
+    padding-bottom: 4.1rem;
+}
+
+.logos-redes{
+    display: flex;
+    gap:13px;
+}
+footer input{
+
+font-family: 'Be Vietnam Pro', sans-serif; 
+padding: 10px 12.5px;
+border-radius: 50px;
+border: none;
+}
+
+footer button{
+    border: none;
+}
+
+.contenedor-navs{
+    display: flex;
+    gap: 4rem;
+    
+}
+
+
+.toggle{
+    display: none;
+    background-image: url(../img/icon-hamburger.svg);
+    height: 18px;
+    width: 25px;
+}
+
+@media(max-width:832px){
+    body{
+        font-size: 13px;
+    }
+    .row-h2{
+        flex-direction: column-reverse;   
+    }
+
+    .column{
+        text-align: center;
+    }
+    .column p{
+        padding:10px 0px;
+    }
+
+    .row-h3{
+        flex-direction: column;
+    }
+    
+    .p-li-trucho{
+        text-align: left;
+        padding: 15px 10px !important;
+    }
+    
+    .titulo-li-trucho{
+        background-color:rgb(255,239,234);
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards .card:nth-child(1), .cards .card:nth-child(3){
+        display: none;
+    }
+
+    .contenedor-simplify{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-blanco{
+        margin-bottom: 40px;
+    }
+
+    .row-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-navs{
+        order: -1;
+        padding-bottom: 2rem     ;
+        gap:2rem;
+    }
+
+    .fila-form{
+        order:-2;
+        padding-bottom: 2rem;
+    }
+
+    .column-imagenes{
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .logo-footer{
+        padding-bottom: 2.5rem;
+    }
+    .logos-redes{
+        padding-bottom: 2rem;
+        gap:2rem;
+    }
+    footer p{
+        text-align: center;
+    }
+
+    footer .logos-redes img{
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Clases menu hamburguesa */
+    .toggle{
+        position: absolute;
+        left:90%;
+        top:0px;
+        display: block;
+    }
+        
+    .navegacion ul {
+        display: none;
+    }
+    
+    .navegacion ul.open {
+        display: flex;
+    }
+
+    header .boton-naranja{
+        display: none;
+    }
+
+        
+    header.contenedor-conMargen{
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .navegacion{
+        width: 100%;
+}
+.navegacion ul.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+
+
+.navegacion ul.open 
+
+    a.toggle.open{
+      background-image:url(../img/icon-close.svg);
+      height: 21px;
+      width: 21px;
+}
+}
